@@ -1,10 +1,9 @@
-
 import React, { useState } from 'react';
 import { Star, ShieldCheck, Truck, RefreshCcw, Heart, Share2, Plus, Minus } from 'lucide-react';
 import { useParams } from 'react-router-dom';
-import { PRODUCTS } from '../constants';
-import { useCart } from '../context/CartContext';
-import ProductCard from '../components/ProductCard';
+import { PRODUCTS } from '../constants.ts';
+import { useCart } from '../context/CartContext.tsx';
+import ProductCard from '../components/ProductCard.tsx';
 
 const ProductDetail: React.FC = () => {
   const { id } = useParams();

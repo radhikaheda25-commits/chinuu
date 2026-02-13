@@ -1,8 +1,7 @@
-
 import React, { useState, useMemo } from 'react';
 import { SlidersHorizontal, ChevronDown, X } from 'lucide-react';
-import { PRODUCTS, SIZES, COLORS } from '../constants';
-import ProductCard from '../components/ProductCard';
+import { PRODUCTS, SIZES, COLORS } from '../constants.ts';
+import ProductCard from '../components/ProductCard.tsx';
 
 const Shop: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);

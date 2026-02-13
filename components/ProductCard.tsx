@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Heart, ShoppingBag, Eye } from 'lucide-react';
-import { Product } from '../types';
-import { useCart } from '../context/CartContext';
+import { Product } from '../types.ts';
+import { useCart } from '../context/CartContext.tsx';
 
 interface ProductCardProps {
   product: Product;

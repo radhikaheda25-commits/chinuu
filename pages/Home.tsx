@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { ArrowRight, Star, Quote, Mail } from 'lucide-react';
-import { PRODUCTS } from '../constants';
-import ProductCard from '../components/ProductCard';
+import { PRODUCTS } from '../constants.ts';
+import ProductCard from '../components/ProductCard.tsx';
 
 const Home: React.FC = () => {
   const bestSellers = PRODUCTS.filter(p => p.isBestSeller).slice(0, 4);

@@ -1,13 +1,12 @@
-
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { CartProvider } from './context/CartContext';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Shop from './pages/Shop';
-import ProductDetail from './pages/ProductDetail';
-import Checkout from './pages/Checkout';
+import { CartProvider } from './context/CartContext.tsx';
+import Navbar from './components/Navbar.tsx';
+import Footer from './components/Footer.tsx';
+import Home from './pages/Home.tsx';
+import Shop from './pages/Shop.tsx';
+import ProductDetail from './pages/ProductDetail.tsx';
+import Checkout from './pages/Checkout.tsx';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();

@@ -1,8 +1,7 @@
-
 import React, { useState } from 'react';
 import { Search, ShoppingBag, Heart, User, Menu, X } from 'lucide-react';
-import { useCart } from '../context/CartContext';
-import CartDrawer from './CartDrawer';
+import { useCart } from '../context/CartContext.tsx';
+import CartDrawer from './CartDrawer.tsx';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

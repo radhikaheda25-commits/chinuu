@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { ShieldCheck, ArrowLeft, CreditCard } from 'lucide-react';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../context/CartContext.tsx';
 
 const Checkout: React.FC = () => {
   const { cart, totalPrice, clearCart } = useCart();
